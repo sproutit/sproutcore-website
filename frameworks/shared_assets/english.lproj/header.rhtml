@@ -1,0 +1,21 @@
+<% content_for :header do %>
+<div id="base">
+<header>
+  <% link_to :target => :home, :current => false do %>
+    <img src="<%= sc_static 'header-logo' %>" id="header-logo" alt="SproutCore Logo">
+  <% end %>
+  
+  <ul id="header-menu">
+    <li><%= link_to 'Home', :target => :home %></li>
+    <li><%= link_to 'Learn', :target => :documentation %></li>
+    <li><%= link_to 'Discuss', :target => :community %></li>
+    <li><%= link_to 'Download', :target => :downloads %></li>
+    <li><%= link_to 'Contribute', :target => :contribute %></li>
+    <li><%= link_to 'Blog', :href => 'http://blog.sproutcore.com' %></li>
+  </ul>
+  
+</header>
+<% # used to draw the white page background %>
+<div id="body-page">&nbsp;</div>
+<article id="body-article">
+<% end %>

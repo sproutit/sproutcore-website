@@ -1,0 +1,38 @@
+/* Overall layout of the header is in core.css */
+
+body header ul {
+	position: absolute;
+	right: 12px;
+	height: 18px;
+	top: 50%;
+	margin: -11px;
+	list-style: none;
+	left: 200px;
+	text-align: right;
+}
+
+header ul li {
+	display: inline;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+header ul li.button {
+	padding-left: 0;
+}
+
+header ul li .current {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+header ul a {
+	color:  white;
+	text-decoration: none ;
+}
+ 
+
+
+
+ 
+

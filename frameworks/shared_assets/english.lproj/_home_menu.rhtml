@@ -1,0 +1,14 @@
+<ul id="section-menu">
+  <li><%= link_to 'Why SproutCore', :target => :home %></li>
+  <li><%= link_to 'Cloud Applications', :target => :cloud_applications %></li>
+  <li><%= link_to 'Demos', :target => :demos %></li>
+  <li><%= link_to 'Tech Specs', :target => :specs %></li>
+
+  <li class="button">
+    <% link_to :target => :downloads, :class => 'sc-view sc-button-view sc-regular-size def sc-static-layout capsule' do %>
+      <span class="sc-button-inner" style="min-width: 100px;">
+        <label class="sc-button-label">Get Started!</label>
+      </span>
+    <% end %>
+  </li>
+</ul>

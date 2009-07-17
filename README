@@ -1,0 +1,19 @@
+=============================================================================
+Project:   SproutCore Website
+Copyright: ©2009 Sprout Systems, Inc.
+=============================================================================
+
+This packages uses the SproutCore build system to generate the main SproutCore
+website.  Because it uses the build system, it is automatically multilingual
+and optimized for high-performance serving.  All assets for each page are
+cached indefinitely on a browser.
+
+Each page on the website is stored in the pages directory.  home is used to 
+setup the index page.  A Capistrano file is used to automate the build 
+process and deploy it to the website.
+
+The pages load the full SproutCore framework as well as the shared_assets 
+framework which includes common asset and template files.  The default 
+index.html is stored here as well.
+
+

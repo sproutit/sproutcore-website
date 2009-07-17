@@ -1,0 +1,77 @@
+/* @override 
+	http://localhost:4020/static/shared_assets/en/current/source/core.css?1247813344
+	http://localhost:4020/static/shared_assets/en/current/source/core.css?1247849574
+	http://localhost:4020/static/shared_assets/en/current/source/core.css?1247850030
+*/
+
+/* Core layout of items */
+
+a img { border: none; }
+
+/* the body and body #base are setup this way to get min-height of 100% */
+
+body {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow:  auto;
+}
+
+#base {
+	background-color: #4a5976;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4a5976), to(#5773aa));
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	color: white;
+	height: 48px;
+	margin: 0;
+	display: block;
+	position:absolute ;
+	top:  12px;
+	left: 24px;
+	right: 24px;
+	z-index: 4;
+}
+
+footer {
+	text-align: center;
+	font-size:  9px;
+	color: white;
+	display: block;
+	position: absolute;
+	bottom: 8px;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+article#body-article {
+	display: block;
+	padding: 120px 48px 44px 48px;
+	z-index: 2;
+	position: relative;
+}
+
+#body-page {
+	z-index: 1;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 28px;
+	right: 28px;
+	bottom: 34px;	
+	background-color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 3px solid #b1baca;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3) ;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f0f0f0));
+}
