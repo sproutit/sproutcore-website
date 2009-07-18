@@ -36,6 +36,12 @@ article#body-article h1 {
 	position: relative;
 }
 
+#body-article ul#section-menu li a img {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
 #body-article ul#section-menu a {
 	color: #333;
 	text-decoration: none;

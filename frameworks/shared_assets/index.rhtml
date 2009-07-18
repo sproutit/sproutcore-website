@@ -15,8 +15,22 @@
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=8">
+    
+<% # Shiv to make IE support HTML5 elements for styling %>
+    <!-- [if lte IE 8] >
+      <script>
+      (function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})()
+      </script>
+    <![endif] -->
+
+    <% if config.favicon %>
+    <link rel="icon" href="<%= sc_static(config.favicon) %>">
+    <% end -%>
+    
 <% # Set the 'title' in your config to alter this setting %>
     <title><%= title %></title>
+    <%= @content_for_metatags %>
+    
 <% #
    # You may choose to load one or more bootstrap resources.  These are 
    # JS targets that you would like to load at the top of the page.  Specify
@@ -44,6 +58,9 @@
 -%>
    <%= stylesheets_for_client %>
    <%= @content_for_page_styles %>
+   <% unless @content_for_head_styles.blank? %>
+   <%= @content_for_head_styles %>
+   <% end -%>
    
    <% unless @content_for_head_javascript.blank? %>
    <%= @content_for_head_javascript %>

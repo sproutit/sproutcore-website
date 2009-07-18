@@ -1,0 +1,14 @@
+# The blog_template needs some special config to display properly.
+# We can put it in a Buildfile just for this template so that the code is 
+# kept with other blog_template related assets.  This config could also be 
+# added to the global Buildfile if we preferred.
+
+# Note that configs in this Buildfile will ONLY be visible when building the
+# blog template.
+
+config :blog_template,  
+  :blog_current => true, # marks the blog tab as current at the top 
+  :title => "{Title}{block:PostSummary} - {PostSummary}{/block:PostSummary}",
+  :favicon => nil # will need to put in manually
+  
+  
