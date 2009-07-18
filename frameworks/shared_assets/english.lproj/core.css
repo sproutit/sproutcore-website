@@ -28,7 +28,7 @@ header {
 	margin: 0;
 	display: block;
 	position:absolute ;
-	top:  12px;
+	top:  18px;
 	left: 24px;
 	right: 24px;
 	z-index: 4;
@@ -48,7 +48,8 @@ footer {
 
 article#body-article {
 	display: block;
-	padding: 120px 48px 44px 48px;
+	padding: 134px 0 44px 0;
+	margin: 0 34px;
 	z-index: 2;
 	position: relative;
 }
@@ -57,15 +58,15 @@ article#body-article {
 	z-index: 1;
 	display: block;
 	position: absolute;
-	top: 60px;
-	left: 28px;
-	right: 28px;
+	top: 68px;
+	left: 14px;
+	right: 14px;
 	bottom: 34px;	
 	background-color: white;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	border: 3px solid #b1baca;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+	border: 4px solid #b1baca;
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3) ;
 	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f0f0f0));
 }

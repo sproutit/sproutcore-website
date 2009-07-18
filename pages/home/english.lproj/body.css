@@ -1,0 +1,110 @@
+/* @override 
+	http://localhost:4020/static/home/en/current/source/body.css?1247863863
+	http://localhost:4020/static/home/en/current/source/body.css?1247865580
+*/
+
+/* @group Lead */
+
+#lead {
+	display: block;
+	position: relative ;
+	min-height: 300px;
+	padding-left: 340px;
+}
+
+#lead img.anchor {
+	margin-right: 20px;
+	position: absolute;
+	left: 0px;
+}
+
+#body-article #lead h1 {
+	font-size: 48px;
+	padding-top: 30px;
+	letter-spacing: -2px;
+}
+
+#lead h2 {
+	font-size: 18px;
+	line-height: 1;
+	color: #999;
+}
+
+#lead p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+#lead em {
+	background-color: #fdffb5;
+}
+
+/* @end */
+
+/* @group Beta */
+
+#beta {
+	display: block;
+	margin: 20px 0;
+	padding: 10px;
+	padding-left: 90px;
+	border-top:  1px #ccc solid;
+	position: relative;
+	color: #888;
+	font-size: 13px;
+}
+
+#beta p {
+	line-height: 1.5;
+}
+
+#beta img {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+#beta h2 {
+	color: black;
+	font-size: 20px;
+}
+
+#beta h2 strong {
+	color: red;
+}
+
+/* @end */
+
+/* @group Actions */
+
+#actions {
+	display: block;
+}
+
+#actions ul {
+	list-style: none ;
+	font-size: 24px;
+}
+
+#actions ul li {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+
+#actions ul li a {
+	color: #333;
+	text-decoration: none;
+	padding: 4px 12px;
+}
+
+#actions ul li a:hover {
+	background-color: #333;
+	color: white;
+}
+
+#actions ul li a:active {
+	background-color: black;
+}
+
+/* @end */
+

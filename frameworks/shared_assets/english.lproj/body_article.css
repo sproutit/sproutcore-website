@@ -16,11 +16,11 @@ article#body-article h1 {
 	list-style: none;
 	color: black;
 	text-align: right;
-	padding-bottom: 6px;
+	padding-bottom: 8px;
 	position: absolute ;
-	left: 40px;
-	right: 40px;
-	top: 64px;
+	left: 0px;
+	right: 0px;
+	top: 74px;
 	
 }
 
