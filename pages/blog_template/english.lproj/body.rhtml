@@ -1,0 +1,163 @@
+<% content_for(:body) do %>
+
+<ul id="section-menu">
+  <li><a href="/archive" id="archive_link">Archive</a></li>
+  <li><a href="http://feeds2.feedburner.com/Sproutcore-BlogPosts">
+    <img src="<%= sc_static('rssorange-16') %>"> RSS Feed
+  </a></li>
+  <li><form action="/search" method="get">
+    Search posts:
+	    <input type="text" name="q" value="{SearchQuery}" >
+	    <input type="submit" class="submit" value="Search »" >
+	</form></li>
+</ul>
+
+<section id="sidebar">
+  {block:Twitter}
+      <div id="twitter" style="display:none;">
+          <h3><a href="http://twitter.com/okito">Latest Tweets</a></h3>
+
+          <div id="tweets"></div>        
+      </div>
+
+      <script type="text/javascript">
+          function recent_tweets(data) {
+              for (i=0; i<data.length; i++) {
+                  document.getElementById("tweets").innerHTML = 
+                      document.getElementById("tweets").innerHTML + 
+                      '<a href="http://twitter.com/okito/status/' + 
+                      data[i].id + '"><div class="content">' + data[i].text + 
+                      '</div></a>';
+              }
+              document.getElementById("twitter").style.display = 'block';
+          }
+      </script>
+  {/block:Twitter}
+</section>
+
+<section id="title">
+  <h1>{Title}</h1>
+
+<% # Subheads -%>
+  {block:SearchPage}
+  <h2>Posts matching <span class="query">{SearchQuery}</span> ({SearchResultCount} result(s).)</h2>
+  {/block:SearchPage}
+
+  {block:DayPage}
+  <h2>Posts on {Month} {DayOfMonth}, {Year}</h2>
+  {/block:DayPage}
+
+  {block:PostTitle}
+  <h2>{PostTitle}</h2>
+  {/block:PostTitle}
+</section>
+  
+<% # Post Contents %>
+
+<section id="posts">
+{block:Posts}
+  <article class="post">
+      <section class="labels">
+          <div class="author">
+            <img src="{PostAuthorPortraitURL-30}">
+            <span class="name">{PostAuthorName}</span>
+          </div>
+          
+          {block:NewDayDate}
+              <div class="date"><a href="{Permalink}">{Month} {DayOfMonth}</a></div>
+          {/block:NewDayDate}
+
+          {block:SameDayDate}
+              <div class="date"><a href="{Permalink}">+</a></div>
+          {/block:SameDayDate}
+      </section>
+
+      {block:Regular}
+          <section class="regular">
+              {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+              {Body}
+          </section>
+      {/block:Regular}
+
+      {block:Photo}
+          <section class="photo">
+              {LinkOpenTag}<img src="{PhotoURL-400}" alt="{PhotoAlt}"/>{LinkCloseTag}
+              {block:Caption}
+                  <div class="caption">{Caption}</div>
+              {/block:Caption}
+          </section>
+      {/block:Photo}
+
+      {block:Quote}
+          <section class="quote">
+              <blockquote>
+                  <big class="quote">&#147;</big> {Quote}
+              </blockquote>
+              {block:Source}<span class="source">{Source}</span>{/block:Source}
+          </section>
+      {/block:Quote}
+
+      {block:Link}
+          <section class="link">
+              <a href="{URL}" class="link" {Target}>{Name}</a>
+              {block:Description}
+                  <span class="description">{Description}</span>
+              {/block:Description}
+          </section>
+      {/block:Link}
+
+      {block:Conversation}
+          <section class="conversation">
+              {block:Title}<h2><a href="{Permalink}">{Title}</a></h2>{/block:Title}
+              <ul>
+                  {block:Lines}
+                      <li>
+                          {block:Label}<span class="label">{Label}</span>{/block:Label}
+                          {Line}
+                      </li>
+                  {/block:Lines}
+              </ul>
+          </section>
+      {/block:Conversation}
+
+      {block:Audio}
+          <section class="audio">
+              {AudioPlayerGrey}
+              {block:Caption}
+                  <div class="caption">{Caption}</div>
+              {/block:Caption}
+          </section>
+      {/block:Audio}
+
+      {block:Video}
+          <section class="video">
+              {Video-400}
+              {block:Caption}
+                  <div class="caption">{Caption}</div>
+              {/block:Caption}
+          </section>
+      {/block:Video}
+
+      <section class="meta">
+        <a class="dsq-comment-count" href="{Permalink}#disqus_thread">Comments (View)</a> - <a href="{Permalink}">Permalink</a>
+      </section>
+
+  </article>
+{/block:Posts}
+
+{block:PermalinkPage}
+<script type="text/javascript">
+  var disqus_url = "{Permalink}"; 
+  var disqus_title ="{block:PostTitle}{PostTitle}{/block:PostTitle}";
+</script>
+<div id="disqus_thread"></div>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/sproutcore/embed.js"></script>
+
+{/block:PermalinkPage}
+
+</section>
+
+
+<% end %>
