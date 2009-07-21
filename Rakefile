@@ -189,7 +189,7 @@ task :link_current => [:collect_password, :prepare_targets] do
       # Also - this is for home only
       if target.target_name.to_s == '/home'
         to_path = '/var/www/index.html'
-        from_path = "#{from_path}/index.html"
+        from_path = "/var/www/static#{target.index_root}/en/#{build_number}/index.html"
         unless ssh.exec!("ls #{to_path}").empty? # check for existance
           puts ssh.exec!("rm #{to_path}") || " ~ Removed link at #{to_path}"
         end

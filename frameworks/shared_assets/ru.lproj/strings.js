@@ -21,6 +21,6 @@ SC.stringsFor('Русский', {
   "_Its Open Source!": "Исходный код открыт!",
   
   
-  "_Select a language:": "Select a language:",
-  "_Choose Language": "Choose Language"
+  "_Select a language:": "Выбор языка:",
+  "_Choose Language": "Выбрать язык"
 }) ;

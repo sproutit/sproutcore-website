@@ -20,6 +20,6 @@ SC.stringsFor('Українська', {
   "_Problem with the site?": "Знайдені проблеми з сайтом? Немає проблеми.",
   "_Its Open Source!": "Вихідний код відкрит!",
   
-  "_Select a language:": "Select a language:",
-  "_Choose Language": "Choose Language"
+  "_Select a language:": "Вибір мови:",
+  "_Choose Language": "Вибрати мову"
 }) ;
