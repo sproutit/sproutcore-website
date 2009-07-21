@@ -3,7 +3,7 @@
 require 'extlib'
 
 # Config Settings
-LANGUAGES = [:en]
+LANGUAGES = [:en, :ru, :uk]
 
 # Autodetect some environment variables
 SC_BUILD = 'sc-build'
@@ -160,15 +160,31 @@ task :link_current => [:collect_password, :prepare_targets] do
     targets.each do |target|
       # find the local build number
       build_number = target.prepare!.compute_build_number
+
+      puts "Installing #{target.target_name}..."
       
-      from_path = "/var/www/static#{target.index_root}/en/#{build_number}"
+      # first, link index.html
+      from_path = "/var/www/static#{target.index_root}/en/#{build_number}/index.html"
       to_path   = "/var/www#{target.target_name}"
       
-      puts "Installing #{target.target_name}..."
+      puts ssh.exec!("mkdir -p #{to_path}") || "% mkdir -p #{to_path}"
+      to_path = "#{to_path}/index.html"
       unless ssh.exec!("ls #{to_path}").empty? # check for existance
         puts ssh.exec!("rm #{to_path}") || " ~ Removed link at #{to_path}"
       end
       puts ssh.exec!("ln -s #{from_path} #{to_path}") || " ~ Linked #{from_path} => #{to_path}"
+
+      # link each language
+      LANGUAGES.each do |lang|
+        from_path = "/var/www/static#{target.index_root}/#{lang}/#{build_number}"
+        to_path   = "/var/www#{target.target_name}/#{lang}"
+
+        puts " ~ installing language: #{lang}"
+        unless ssh.exec!("ls #{to_path}").empty? # check for existance
+          puts ssh.exec!("rm #{to_path}") || " ~ Removed link at #{to_path}"
+        end
+        puts ssh.exec!("ln -s #{from_path} #{to_path}") || " ~ Linked #{from_path} => #{to_path}"
+      end
       
       # Also - this is for home only
       if target.target_name.to_s == '/home'

@@ -18,5 +18,8 @@ SC.stringsFor('Українська', {
   "_Blog": "Блог",
   "_Footer Copyright": "© 2008-2009, Sprout Systems, Inc. Всі права захищені.",
   "_Problem with the site?": "Знайдені проблеми з сайтом? Немає проблеми.",
-  "_Its Open Source!": "Вихідний код відкрит!"
+  "_Its Open Source!": "Вихідний код відкрит!",
+  
+  "_Select a language:": "Select a language:",
+  "_Choose Language": "Choose Language"
 }) ;

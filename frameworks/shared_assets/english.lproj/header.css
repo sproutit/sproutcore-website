@@ -32,7 +32,10 @@ header ul a {
 }
  
 
-
+header ul a img.flag {
+  vertical-align: middle;
+  position: relative;
+}
 
  
 
