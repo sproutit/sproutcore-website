@@ -10,15 +10,15 @@
 // how your UI will look and you'll notice right away when something needs a
 // localized string added to this file!
 //
-SC.stringsFor('English', {
-  "_Introducing SproutCore 1.0": "RU.Introducing SproutCore 1.0",
-  "_HTML5 Application Framework": "RU.HTML5 Application Framework",
-  "_Lead.Headline": "RU.Deliver stunning desktop-class applications in <em>any modern web browser</em> without plugins.",
+SC.stringsFor('Русский', {
+  "_Introducing SproutCore 1.0": "Представляем SproutCore 1.0",
+  "_HTML5 Application Framework": "Программный фреймворк HTML5",
+  "_Lead.Headline": "Снабжение потрясающих настольных приложений в <em>любом современном веб-браузере</em> без плагинов.",
   
-  "_Beta.Headline": "RU.SproutCore 1.0 is <strong>Beta!</strong>",
-  "_Beta.Body": "RU.After 20,000 lines of new code, over 5,000 new unit tests, and countless hours of effort by over 30 contributors, SproutCore 1.0 is almost ready.  Try out the new code today and help us make the push to our final release.  Join the HTML5 revolution.",
+  "_Beta.Headline": "SproutCore 1.0 — <strong>Бета-версия!</strong>",
+  "_Beta.Body": "После 20000 строк нового кода, более 5000 новых юнит-тестов, и бесчисленного количества часов работы более 30 вкладчиков, SproutCore 1.0 почти готов. Попробуйте новый код сегодня и помогите нам сделать толчок для нашей окончательной версии. Присоединяйтесь к революции HTML5.",
   
-  "_Learn More": "RU.Learn More",
-  "_Latest News": "RU.Latest News",
-  "_Get Started": "RU.Get Started"
+  "_Learn More": "Подробнее",
+  "_Latest News": "Последние новости",
+  "_Get Started": "Начните здесь"
 }) ;

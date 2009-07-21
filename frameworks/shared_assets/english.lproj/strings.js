@@ -16,7 +16,7 @@ SC.stringsFor('English', {
   "_Wiki": "Wiki",
   "_Screencasts": "Screencasts",
   "_Blog": "Blog",
-  "_Footer Copyright": "copyright 2008-2009, Sprout Systems, Inc.  All rights reserved.",
-  "_Problem with the site?": "Found a problem with the site?  No problem.",
+  "_Footer Copyright": "copyright 2008-2009, Sprout Systems, Inc. All rights reserved.",
+  "_Problem with the site?": "Found a problem with the site? No problem.",
   "_Its Open Source!": "It's open source!"
 }) ;
