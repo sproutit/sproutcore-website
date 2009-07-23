@@ -11,14 +11,14 @@
 // localized string added to this file!
 //
 SC.stringsFor('Русский', {
-  "_Home": "Заглавная",
-  "_Download": "Загрузить",
+  "_Home": "Главная",
+  "_Download": "Скачать",
   "_Wiki": "Вики",
   "_Screencasts": "Видео",
   "_Blog": "Блог",
   "_Footer Copyright": "© 2008-2009, Sprout Systems, Inc. Все права защищены.",
-  "_Problem with the site?": "Найдены проблемы с сайтом? Нет проблем.",
-  "_Its Open Source!": "Исходный код открыт!",
+  "_Problem with the site?": "Обнаружили проблему с сайтом? Помогите исправить её: ",
+  "_Its Open Source!": "исходный код на GitHub.",
   
   
   "_Select a language:": "Выбор языка:",
