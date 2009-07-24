@@ -16,7 +16,7 @@ SC.stringsFor('Français', {
   "_Lead.Headline": "Offrant des applications étonantes à l'interieur de <em>tout navigateur web moderne</em> sans plugins.",
   
   "_Beta.Headline": "SproutCore 1.0 — <strong>Beta!</strong>",
-  "_Beta.Body": "Après 20.000 lignes de code, plus de 5000 nouvelles unités de tests, et d'innombrables heures de travail par plus de 30 contributeurs, SproutCore 1.0 est presque prête. Essayez le nouveau code aujourd'hui et aidez-nous à lancer le version finale. Rejoignez la révolution de HTML5.",
+  "_Beta.Body": "Après 20.000 lignes de code, plus de 5000 nouvelles unités de tests, et d'innombrables heures de travail par plus de 30 contributeurs, SproutCore 1.0 est presque prête. Essayez le nouveau code aujourd'hui et aidez-nous à lancer la version finale. Rejoignez la révolution de HTML5.",
   
   "_Learn More": "Pour en savoir plus",
   "_Latest News": "Dernières nouvelles",

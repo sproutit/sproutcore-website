@@ -18,7 +18,7 @@ SC.stringsFor('Français', {
   "_Blog": "Blog",
   "_Footer Copyright": "© 2008-2009, Sprout Systems, Inc. Tous droits réservés.",
   "_Problem with the site?": "Avez-vous trouvé un problème avec le site? Pas de problème.",
-  "_Its Open Source!": "Il est open source!",
+  "_Its Open Source!": "Ce site est open source!",
   
   "_Select a language:": "Choisissez votre langue:",
   "_Choose Language": "Sélectionnez"
