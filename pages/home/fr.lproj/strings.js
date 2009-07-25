@@ -11,14 +11,14 @@
 // localized string added to this file!
 //
 SC.stringsFor('Français', {
-  "_Introducing SproutCore 1.0": "Présentation SproutCore 1.0",
-  "_HTML5 Application Framework": "Cadre d'applications de HTML5",
-  "_Lead.Headline": "Offrant des applications étonantes à l'interieur de <em>tout navigateur web moderne</em> sans plugins.",
+  "_Introducing SproutCore 1.0": "SproutCore 1.0",
+  "_HTML5 Application Framework": "Framework d'applications HTML5",
+  "_Lead.Headline": "Créez des applications riches époustouflantes dans tout <em>tout navigateur web moderne</em>, sans plugins.",
   
-  "_Beta.Headline": "SproutCore 1.0 — <strong>Beta!</strong>",
-  "_Beta.Body": "Après 20.000 lignes de code, plus de 5000 nouvelles unités de tests, et d'innombrables heures de travail par plus de 30 contributeurs, SproutCore 1.0 est presque prête. Essayez le nouveau code aujourd'hui et aidez-nous à lancer la version finale. Rejoignez la révolution de HTML5.",
+  "_Beta.Headline": "SproutCore 1.0 est en version <strong>beta !</strong>",
+  "_Beta.Body": "Après 20 000 lignes de code, plus de 5 000 nouveaux tests unitaires et d'innombrables heures de travail par plus de 30 contributeurs, SproutCore 1.0 est presque prêt. Essayez le nouveau code dès maintenant et aidez-nous à lancer la version finale. Rejoignez la révolution HTML5.",
   
-  "_Learn More": "Pour en savoir plus",
+  "_Learn More": "En savoir plus",
   "_Latest News": "Dernières nouvelles",
   "_Get Started": "Commencez ici"
 }) ;

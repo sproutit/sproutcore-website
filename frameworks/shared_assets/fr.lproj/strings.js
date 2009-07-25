@@ -14,12 +14,12 @@ SC.stringsFor('Français', {
   "_Home": "Accueil",
   "_Download": "Télécharger",
   "_Wiki": "Wiki",
-  "_Screencasts": "Video",
+  "_Screencasts": "Vidéos",
   "_Blog": "Blog",
   "_Footer Copyright": "© 2008-2009, Sprout Systems, Inc. Tous droits réservés.",
-  "_Problem with the site?": "Avez-vous trouvé un problème avec le site? Pas de problème.",
-  "_Its Open Source!": "Ce site est open source!",
+  "_Problem with the site?": "Il y a un problème sur le site ? Pas de problème :",
+  "_Its Open Source!": "ce site est open source !",
   
   "_Select a language:": "Choisissez votre langue:",
-  "_Choose Language": "Sélectionnez"
+  "_Choose Language": "Sélectionner"
 }) ;
