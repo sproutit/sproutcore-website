@@ -17,8 +17,8 @@ SC.stringsFor('Norsk (Bokmål)', {
   "_Screencasts": "Screencasts",
   "_Blog": "Blogg",
   "_Footer Copyright": "copyright 2008-2009, Sprout Systems, Inc. Alle rettigheter forbeholdes.",
-  "_Problem with the site?": "Funnet et problem med siden? Ikke noe problem.",
-  "_Its Open Source!": "Den er open source!",
+  "_Problem with the site?": "Funnet et problem med nettsiden? Ikke noe problem.",
+  "_Its Open Source!": "Den er åpen kildekode!",
   
   "_Select a language:": "Velg et språk:",
   "_Choose Language": "Velg språk"
