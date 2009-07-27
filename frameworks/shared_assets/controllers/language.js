@@ -22,6 +22,7 @@ SharedAssets.languageController = SC.ArrayController.create(
     { key: "es", title: "Español", icon: sc_static('flags/es') },
     { key: "fr", title: "Français", icon: sc_static('flags/fr') },
     { key: "no", title: "Norsk (Bokmål)", icon: sc_static('flags/no') },
+		{ key: "ro", title: "Română", icon: sc_static('flags/ro') },
     { key: "ru", title: "Русский", icon: sc_static('flags/ru') },
     { key: "uk", title: "Українська", icon: sc_static('flags/uk') }
   ],
