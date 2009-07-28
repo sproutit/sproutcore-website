@@ -10,7 +10,7 @@
 // how your UI will look and you'll notice right away when something needs a
 // localized string added to this file!
 //
-SC.stringsFor('Română', {
+SC.stringsFor('ro', {
   "_Introducing SproutCore 1.0": "SproutCore 1.0",
   "_HTML5 Application Framework": "Framework pentru aplicații HTML5",
   "_Lead.Headline": "Creați aplicații de tip desktop în <em>toate browserele moderne</em>, fără a instala pluginuri.",

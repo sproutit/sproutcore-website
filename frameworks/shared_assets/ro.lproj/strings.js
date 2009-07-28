@@ -10,7 +10,7 @@
 // how your UI will look and you'll notice right away when something needs a
 // localized string added to this file!
 //
-SC.stringsFor('Română', {
+SC.stringsFor('ro', {
   "_Home": "Acasă",
   "_Download": "Descarcă",
   "_Wiki": "Wiki",
