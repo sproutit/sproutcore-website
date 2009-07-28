@@ -3,7 +3,7 @@
 require 'extlib'
 
 # Config Settings
-LANGUAGES = [:en, :es, :de, :ru, :uk, :no, :fr]
+LANGUAGES = [:en, :es, :de, :ru, :uk, :no, :fr, :ro]
 
 # Autodetect some environment variables
 SC_BUILD = 'sc-build'
