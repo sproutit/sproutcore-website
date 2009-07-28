@@ -1,5 +1,5 @@
-?tmp*
+tmp
+.tmp*
 .svn
 *.DS_Store*
 .project
-.gitignore
