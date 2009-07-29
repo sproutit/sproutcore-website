@@ -16,7 +16,7 @@ SC.stringsFor('ro', {
   "_Lead.Headline": "Creați aplicații de tip desktop în <em>toate browserele moderne</em>, fără a instala pluginuri.",
   
   "_Beta.Headline": "SproutCore 1.0 a ajuns la versiunea <strong>beta !</strong>",
-  "_Beta.Body": "După 20 000 linii de cod, mai mult de 5 000 de teste și nenumărate ore de muncă din partea celor mai mult de 30 de colaboratori, SproutCore 1.0 este aproape de versiunea finala. Încercați-l acum și ajutați-ne să îl aducem la o versiune finala . Alăturați-vă revoluției HTML5.",
+  "_Beta.Body": "După 20 000 linii de cod, mai mult de 5 000 de teste și nenumărate ore de muncă din partea celor mai mult de 30 de colaboratori, SproutCore 1.0 este aproape gata. Încercați-l acum și ajutați-ne să îl aducem la o versiune finala . Alăturați-vă revoluției HTML5.",
   
   "_Learn More": "Aflați mai multe",
   "_Latest News": "Ultimele noutăți",
