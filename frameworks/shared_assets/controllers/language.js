@@ -17,15 +17,20 @@ SharedAssets.languageController = SC.ArrayController.create(
     Define languages to display in the picker pane here
   */
   LANGUAGES: [
-    { key: "en", title: "English", icon: sc_static('flags/en') },
-    { key: "de", title: "Deutsch", icon: sc_static('flags/de') },
-    { key: "es", title: "Español", icon: sc_static('flags/es') },
-    { key: "fr", title: "Français", icon: sc_static('flags/fr') },
-    { key: "no", title: "Norsk (Bokmål)", icon: sc_static('flags/no') },
-		{ key: "ro", title: "Română", icon: sc_static('flags/ro') },
-    { key: "ru", title: "Русский", icon: sc_static('flags/ru') },
-    { key: "uk", title: "Українська", icon: sc_static('flags/uk') }
+    { key: "en", title: "English", icon: sc_static('flags/en'), button: "Choose Language" },
+    { key: "de", title: "Deutsch", icon: sc_static('flags/de'), button: "Sprache auswählen" },
+    { key: "es", title: "Español", icon: sc_static('flags/es'), button: "Seleccione el idioma" },
+    { key: "fr", title: "Français", icon: sc_static('flags/fr'), button: "Sélectionner" },
+    { key: "no", title: "Norsk (Bokmål)", icon: sc_static('flags/no'), button: "Velg språk" },
+		{ key: "ro", title: "Română", icon: sc_static('flags/ro'), button: "Selectați" },
+    { key: "ru", title: "Русский", icon: sc_static('flags/ru'), button: "Выбрать язык" },
+    { key: "uk", title: "Українська", icon: sc_static('flags/uk'), button: "Вибрати мову" }
   ],
+  
+  buttonText: function()
+  {
+    return this.get('selection').firstObject().get('button') ;
+  }.property('selection'),
   
   /**
     Displays the picker.

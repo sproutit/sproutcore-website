@@ -40,7 +40,7 @@ SharedAssets.languagePage = SC.Page.design({
       
       selectButton: SC.ButtonView.design({
         layout: { centerX: 0, width: 150, height: 24, bottom: 20 },
-        title: "_Choose Language".loc(),
+        titleBinding: "SharedAssets.languageController.buttonText",
         isDefault: YES,
         action: "chooseLanguage",
         target: "SharedAssets.languageController"
