@@ -30,7 +30,11 @@ SharedAssets.languagePage = SC.Page.design({
           hasContentIcon: YES,
           rowHeight: 32,
           
-          selectionBinding: "SharedAssets.languageController.selection"
+          selectionBinding: "SharedAssets.languageController.selection",
+          
+          doubleClick: function(){
+            SharedAssets.languageController.chooseLanguage() ;
+          }
         })
       }),
       
