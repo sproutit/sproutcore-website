@@ -11,7 +11,7 @@
 // localized string added to this file!
 //
 SC.stringsFor('ro', {
-  "_Home": "Acasă",
+  "_Home": "Prima pagină",
   "_Download": "Descarcă",
   "_Wiki": "Wiki",
   "_Screencasts": "Video",
@@ -19,7 +19,8 @@ SC.stringsFor('ro', {
   "_Footer Copyright": "© 2008-2009, Sprout Systems, Inc. Toate drepturile rezervate.",
   "_Problem with the site?": "Ați găsit o problemă pe site ? Nicio problemă :",
   "_Its Open Source!": "acest site este open source !",
-  
+
   "_Select a language:": "Alegeți limba:",
   "_Choose Language": "Selectați"
 }) ;
+
