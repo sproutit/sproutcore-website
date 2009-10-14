@@ -19,6 +19,7 @@ SC.stringsFor('English', {
   "_Beta.Body": "After 20,000 lines of new code, over 5,000 new unit tests, and countless hours of effort by over 30 contributors, SproutCore 1.0 is almost ready. Try out the new code today and help us make the push to our final release. Join the HTML5 revolution.",
   
   "_Learn More": "Learn More",
+  "_View Demos": "View Demos",
   "_Latest News": "Latest News",
   "_Get Started": "Get Started"
 }) ;
