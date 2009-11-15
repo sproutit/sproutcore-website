@@ -21,5 +21,12 @@ SC.stringsFor('Norsk (Bokmål)', {
   "_Its Open Source!": "Den er åpen kildekode!",
   
   "_Select a language:": "Velg et språk:",
-  "_Choose Language": "Velg språk"
+  "_Choose Language": "Velg språk",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Lær mer »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "Siste nytt »",
+  "_Get Started.Button": "Kom igang"  
+  
 }) ;

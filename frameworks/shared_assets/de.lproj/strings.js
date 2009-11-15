@@ -23,5 +23,12 @@ SC.stringsFor('German', {
   "_Its Open Source!": "Sie ist <em>open source</em>!",
   
   "_Select a language:": "Wähle eine Sprache:",
-  "_Choose Language": "Sprache auswählen"
+  "_Choose Language": "Sprache auswählen",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Ich will mehr wissen »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "Neueste Nachrichten »",
+  "_Get Started.Button": "Ich will anfangen"
+  
 }) ;

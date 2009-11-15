@@ -21,5 +21,12 @@ SC.stringsFor('English', {
   "_Its Open Source!": "Es open source!",
   
   "_Select a language:": "Seleccione un idioma:",
-  "_Choose Language": "Seleccione el idioma"
+  "_Choose Language": "Seleccione el idioma",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Más información »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "Ultimas Noticias »",
+  "_Get Started.Button": "Inicios en SproutCore"
+    
 }) ;

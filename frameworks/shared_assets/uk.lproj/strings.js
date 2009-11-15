@@ -21,5 +21,12 @@ SC.stringsFor('Українська', {
   "_Its Open Source!": "Вихідний код відкрит!",
   
   "_Select a language:": "Вибір мови:",
-  "_Choose Language": "Вибрати мову"
+  "_Choose Language": "Вибрати мову",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Докладніше »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "Новини »",
+  "_Get Started.Button": "Почніть тут"
+
 }) ;

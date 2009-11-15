@@ -22,5 +22,12 @@ SC.stringsFor('Русский', {
   
   
   "_Select a language:": "Выбор языка:",
-  "_Choose Language": "Выбрать язык"
+  "_Choose Language": "Выбрать язык",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Подробнее »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "Новости »",
+  "_Get Started.Button": "Начните здесь"
+  
 }) ;

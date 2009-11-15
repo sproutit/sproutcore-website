@@ -1,27 +1,18 @@
 <% content_for :body do %>
 
-<% # partial :home_menu %>
+<%= partial :home_menu %>
 
 <section id="lead">
   <img src="<%= sc_static('logo-large') %>" class="anchor">
-  <h1><%= loc("_Introducing SproutCore 1.0") %></h1>
-  <h2><%= loc("_HTML5 Application Framework") %></h2>
-  <p><%= loc("_Lead.Headline") %></p>
+  <h1 style="line-height:1.2; padding-top:0"><%= loc("_Lead.Headline") %></h1>
+  <h2>SproutCore: <%= loc("_HTML5 Application Framework") %></h2>
+  <p></p>
 </section>
 
 <section id="beta">
   <img src="<%= sc_static('alert') %>" class="icon">
-  <h2><%= loc("_Beta.Headline") %></h2>
-  <p><%= loc("_Beta.Body") %></p>
-</section>
-
-<section id="actions">
-  <ul>
-    <li><%= link_to "#{loc("_Learn More")} »", :href => 'http://wiki.sproutcore.com/SproutCore10-Introduction' %></li>
-    <li><%= link_to "#{loc("_View Demos")} »", :href => 'http://demo.sproutcore.com' %></li>
-    <li><%= link_to "#{loc("_Latest News")} »", :href => 'http://blog.sproutcore.com' %></li>
-    <li><%= link_to "#{loc("_Get Started")} »", :href => "http://wiki.sproutcore.com/Abbot-Setting+Up" %></li>
-  </ul>
+  <h2><%= loc("_News.Headline") %></h2>
+  <p><%= loc("_News.Body") %></p>
 </section>
   
 <% end %>

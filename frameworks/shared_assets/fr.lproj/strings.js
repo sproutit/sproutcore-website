@@ -21,5 +21,12 @@ SC.stringsFor('Français', {
   "_Its Open Source!": "ce site est open source !",
   
   "_Select a language:": "Choisissez votre langue:",
-  "_Choose Language": "Sélectionner"
+  "_Choose Language": "Sélectionner",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Dernières nouvelles »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "En savoir plus »",
+  "_Get Started.Button": "Commencez ici"  
+  
 }) ;

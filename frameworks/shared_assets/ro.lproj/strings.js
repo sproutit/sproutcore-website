@@ -21,6 +21,13 @@ SC.stringsFor('ro', {
   "_Its Open Source!": "acest site este open source !",
 
   "_Select a language:": "Alegeți limba:",
-  "_Choose Language": "Selectați"
+  "_Choose Language": "Selectați",
+  
+  "_Introduction.Link": "Introduction", 
+  "_Learn More.Link": "Aflați mai multe »",
+  "_Demos.Link": "Demos »",
+  "_News.Link": "Ultimele noutăți »",
+  "_Get Started.Button": "Începeți aici"  
+  
 }) ;
 

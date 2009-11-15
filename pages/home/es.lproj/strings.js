@@ -15,10 +15,7 @@ SC.stringsFor('English', {
   "_HTML5 Application Framework": "Un Framework para Aplicaciones en HTML5",
   "_Lead.Headline": "Produzca impresionantes aplicaciones web en <em>cualquier browser moderno</em> sin la necesidad de plugins.",
   
-  "_Beta.Headline": "SproutCore 1.0 se encuentra en <strong>Beta!</strong>",
-      "_Beta.Body": "Tras 20,000 nuevas líneas de código, más de 5,000 nuevas unidades de tests, e incontables horas de esfuerzo por más de 30 contribuyentes, SproutCore 1.0 está casi listo. Prueba el nuevo código hoy y ayúdanos a dar el último empujón para el release final. Unete a la revolución de HTML5.",
+  "_News.Headline": "SproutCore 1.0 se encuentra en <strong>Beta!</strong>",
+      "_News.Body": "Tras 20,000 nuevas líneas de código, más de 5,000 nuevas unidades de tests, e incontables horas de esfuerzo por más de 30 contribuyentes, SproutCore 1.0 está casi listo. Prueba el nuevo código hoy y ayúdanos a dar el último empujón para el release final. Unete a la revolución de HTML5."
   
-  "_Learn More": "Más información",
-  "_Latest News": "Ultimas Noticias",
-  "_Get Started": "Inicios en SproutCore"
 }) ;
