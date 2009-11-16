@@ -13,7 +13,7 @@
 SC.stringsFor('Français', {
   "_Introducing SproutCore 1.0": "SproutCore 1.0",
   "_HTML5 Application Framework": "Framework JavaScript d'applications HTML5",
-  "_Lead.Headline": "Créez des applications internet riches dans <em>tout navigateur web moderne</em>, sans plugins.",
+  "_Lead.Headline": "Créez des applications internet riches, rapides et réactives, dans <em>tout navigateur web moderne</em>, sans plugins.",
   
   "_News.Headline": "Téléchargez SproutCore 1.0 <strong>Release Candidate</strong>",
   "_News.Body": "Après 20 000 lignes de code, plus de 5 000 nouveaux tests unitaires et d'innombrables heures de travail par plus de 30 contributeurs, SproutCore 1.0 est prêt. Essayez le nouveau code dès maintenant et rejoignez la révolution HTML5."
