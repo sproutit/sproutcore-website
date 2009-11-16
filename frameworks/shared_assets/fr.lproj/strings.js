@@ -20,7 +20,7 @@ SC.stringsFor('Français', {
   "_Problem with the site?": "Il y a un problème sur le site ? Pas de problème :",
   "_Its Open Source!": "ce site est open source !",
   
-  "_Select a language:": "Choisissez votre langue:",
+  "_Select a language:": "Choisissez votre langue :",
   "_Choose Language": "Sélectionner",
   
   "_Introduction.Link": "Introduction", 
