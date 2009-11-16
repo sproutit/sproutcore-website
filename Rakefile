@@ -23,7 +23,7 @@ end
 
 desc "cleans the build output"
 task :clean do
-  path = WORKING / 'tmp' / 'build' / 'static'
+  path = WORKING / 'tmp' / 'build' / 'production' / 'static'
   puts "removing #{path}"
   puts `rm -r #{path}`
 end
