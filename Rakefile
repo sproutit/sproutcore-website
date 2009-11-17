@@ -6,8 +6,11 @@ require 'extlib'
 LANGUAGES = [:en, :es, :de, :ru, :uk, :no, :fr, :ro]
 
 # Autodetect some environment variables
-SC_BUILD = 'sc-build'
+SC_BUILD = '../abbot/bin/sc-build'
 WORKING = File.dirname(__FILE__)
+
+# discover the targets
+TARGETS = Dir.glob(WORKING/'pages'/'*').map { |x| File.basename(x) }.uniq
 
 # store global config options
 OPTS = {}
@@ -18,7 +21,7 @@ $:
 desc "builds the pages to prepare for deployment"
 task :build do
   Dir.chdir WORKING
-  puts `#{SC_BUILD} --all -rv --languages=#{LANGUAGES.join(',')}`
+  puts `#{SC_BUILD} #{TARGETS * ' '} -rv --languages=#{LANGUAGES.join(',')}`
 end
 
 desc "cleans the build output"
