@@ -66,7 +66,11 @@ task :prepare_targets do
   project = SC.load_project(WORKING) 
   
   # get all targets and prepare them so that build numbers work
-  targets = project.targets.values
+  targets = TARGETS.map do |name| 
+    target = project.target_for(name)
+    [target] + target.expand_required_targets
+  end
+  targets = targets.flatten.compact.uniq
   
   puts "preparing build numbers"
   targets.each { |t| t.prepare!.compute_build_number }
