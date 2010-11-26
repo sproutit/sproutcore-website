@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+route '/assets/style/' do
+  # path with version
+  '/assets/style.css'
+end
+
+compile '/assets/style/' do
+  filter :erb
+  filter :relativize_paths, :type => :css
+  filter :rainpress
+end
+
+compile '/' do
+  layout 'home'
+end
+
+compile '/assets/style/*' do
+  # don't filter partial stylesheets
+end
+
+compile '*' do
+  filter :erb
+  snapshot :before_sections
+  layout 'default'
+end
+
+route '*' do
+  
+  item.identifier + 'index.html'
+end
+
+layout '*', :erb
