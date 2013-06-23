@@ -1,47 +1,17 @@
-=============================================================================
-Project:   SproutCore Website
-Copyright: ©2009 Sprout Systems, Inc.
-=============================================================================
+This website is generated using the nanoc gem. It also uses rainpress to compress the CSS files. To install, type:
 
-These are the source files for the new SproutCore marketing website.  
+  gem install nanoc rainpress mime-types
+  
+You can then run:
+  
+  nano compile
 
-Like the rest of SproutCore, the website itself is open source as well.  If 
-you find typos or think of something that would help improve the website, feel 
-free to fork this repository and make the changes.  You can then send a 
-pull request to sproutit on github so we can pull in your new change.
+to generate the final version. You can also see your changes as they happen
+by running:
 
-== How the Website Is Built
+  nanoc autocompile
 
-SproutCore's build tools have a built-in facility for generating 
-cache-optimized, multi-lingual web pages as well as full cloud applications.
-We use these tools to generate our website as well.  
+This will cause nanoc to recompile every time a file in the current directory
+changes. Look in the output/ directory for the built product.
 
-In this repository you'll find a "pages" directory.  This contains the assets
-for each individual page.  the .rhtml files in the .lproj directories contain
-most of the HTML.  We can also add JavaScript and CSS here if needed as well.
-
-TODO: The process described below is still in progress. 
-
-Whenever we make a commit to the "deploy" branch on the sproutit version of
-the repository on github, it triggers a post-commit call to the server which
-will automatically checkout a new copy of the website and rebuild it.  This 
-is the bin/deploy script.
-
-== License and Usage
-
-All contents of the SproutCore marketing website are copyright 2009 Sprout 
-Systems, Inc. and contributors.  SproutCore, the SproutCore Logo, Sproutit, 
-the Sproutit logo and colors are trademarks of Sprout Systems, Inc.
-
-The purpose of this repository is to make it easy for others to develop and 
-improve the website hosted at sproutcore.com and its subdomains.  You may make
-modifications to this work for the purpose of submitting it back for this 
-purpose.   Any changes you make must be shared under this same license to be 
-included on the main website again.
-
-Since it would confuse people to have many websites that all appear the same
-when they are not actually related, you may not copy, in modified or 
-unmodified form, the contents of this site for any other purpose without 
-express written consent from Sprout Systems, Inc.  In particular, use of the 
-SproutCore logo and name are trademarks and may not be used without express 
-written consent from Sprout Systems, Inc.
+You can learn more about nanoc at http://nanoc.stoneship.org/

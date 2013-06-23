@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>SproutCore - A New Item</title>
+	  <link rel="stylesheet" href="/assets/style.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="logo"><a href="/"><img src="/assets/images/logo.png" alt="SproutCore"></a></div>
+      <ul id="menu">
+        <li><a href="/what-is-sproutcore/">What is SproutCore?</a></li>
+        <li><a href="/get-started/">Get Started</a></li>
+        <li><a href="/demos/">Demos &amp; Sample Code</a></li>
+        <li><a href="/documentation/">Documentation</a></li>
+        <li><a href="/community/">Community</a></li>
+        <li><a href="http://blog.sproutcore.com/">Blog</a></li>
+      </ul>
+      <div id="content">
+        <h2>In a Nutshell</h2>
+<p>SproutCore is a JavaScript HTML5 MVC application framework that helps you write super-responsive, desktop-like apps that run in any modern browser, without plugins.</p>
+<h2>SproutCore at 35,000 Feet</h2>
+<p>Installing SproutCore does two things: It downloads a copy of the JavaScript framework, and it also installs some command line tools that assist you in developing and deploying your app.</p>
+<p>SproutCore is organized into different layers. You don&rsquo;t have to use all of them, but most full-featured applications will use parts of most.</p>
+<img src="/assets/images/layers.png">
+<p>We’ll take you on a short tour of these layers, from bottom to top.</p>
+
+<h2>Build Tools</h2>
+<p>There&rsquo;s a common misconception that you need to know Ruby to write SproutCore apps; that&rsquo;s not the case. But we do include some command-line tools that you&rsquo;ll use to develop and deploy your app&mdash;no Ruby knowledge required.</p>
+
+<h3>sc-init</h3>
+<p>Initializes a project directory. A project directory consists of a Buildfile and an apps/ directory, which holds your individual applications. You’ll use this to create your first SproutCore project.</p>
+
+<h3>sc-server</h3>
+<p>The most commonly used build tool. sc-server hosts an HTTP server on port 4020. During development, you’ll connect to http://localhost:4020 while sc-server is running to test your applications. It makes sure your browser gets all of the assets and JavaScript files in the correct order to run, but it leaves the files uncompressed so you can easily debug using Firebug or WebKit’s Web Inspector. (If sc-server feels slow to you, make sure you’re using Ruby 1.9.1 or later.)</p>
+
+<h3>sc-gen</h3>
+<p>A tool to help you quickly generate the source code for your application. For example, if you want to create a new SC.View subclass, you would run:</p>
+<code class="block">sc-gen view AppName.NewView</code>
+<p>There are generators for apps, controllers, models, and many more concepts you’ll learn about in SproutCore. If you’d like to see a list of available generators, run sc-gen without any arguments.</p>
+
+<h3>sc-build</h3>
+<p>Bundles up your JavaScript, CSS, and images so they can be deployed to your server. Because the business logic of SproutCore apps resides on the client, all you have to serve is static content. SproutCore will work with any HTTP server, from Apache to lighttpd to nginx.</p>
+<p>Deploying a SproutCore app is not difficult, but it is important to get right. For more discussion, <a href="http://wiki.sproutcore.com/Deployment-Introduction">see the guide to deploying</a>.</p>
+<p>There are more build tools, but these are the most important. If you’d like to learn more, <a href="http://wiki.sproutcore.com/BuildTools-Introduction">visit the Build Tools wiki page</a>.</p>
+
+<h2>Runtime</h2>
+<p>The runtime layer is where the JavaScript framework begins. It provides all of the basic functionality upon which the layers above it rely.</p>
+<p>JavaScript implements prototypal inheritance instead of the classical inheritance that most programmers are used to from languages like Objective-C, C++, or Java. SproutCore adds a “semi-classy” inheritance system on top of JavaScript; you can create new instances of classes using the <code>create</code> method, or subclass existing classes using the <code>extend</code> method.</p>
+<p>If that sounds confusing, don’t worry. You don’t need to understand the nuances to begin using SproutCore. If you’re curious, <a href="http://javascript.crockford.com/inheritance.html">Douglas Crockford has an excellent article about JavaScript’s inheritance implementation</a>. <a href="http://wiki.sproutcore.com/Runtime-Objects">SproutCore’s inheritance patterns are documented in the wiki.</a></p>
+<p>The root of all objects in SproutCore is SC.Object. When you subclass SC.Object, you get a lot for free. That includes things like bindings and observers. If you’re familiar with Cocoa, these will be like second nature to you. If not, you’ll soon see how powerful they can be.</p>
+<h3>Bindings</h3>
+<p>Bindings connect two properties in your application so that when one property changes, the other will be updated automatically. You can design your application as small, manageable pieces and then connect them with bindings.  Each component can be designed and tested separately, saving you both time and code.</p>
+<p>For example, let's say I have a text field that I want to display the current time. I also have a controller that fetches the current time from our server every second. If I bind them together, as soon as the property on that controller is updated, the view is updated automatically. Bindings allow you to eliminate a tremendous amount of glue code in your application.</p>
+<h3>Observers</h3>
+<p>Observers are methods that get called automatically when a property changes. You start to think about your application in terms of its properties, and the actions that should be taken when they change. Observers allow you to write clean, modular code.</p>
+<p>For example, if I had a Contact model that I wanted to save to the server whenever a field changed, I could write an observer like this:</p>
+<code class="block">firstNameDidChange: function() {
+  this.sendChangesToServer();
+}.observes('firstName')</code>
+
+<h2>Data Store</h2>
+<p><a href="http://rentzsch.tumblr.com/post/286536824/apples-myriad-javascript-frameworks">As Wolf Rentzsch said</a>, “SproutCore’s gem is the Data Store layer.” The Data Store is an object-relational mapping (ORM) system, like Ruby on Rails’ ActiveRecord, Cocoa's CoreData, or CakePHP.</p>
+<p>The Data Store allows you to define your models, enforce validations, search sets of data, and persist changes to a server or local storage.</p>
+<p>For example, you can define a model like this:</p>
+<code class="block">MyApp.Person = SC.Record.extend({
+  firstName:  SC.Record.attr(String),
+  lastName:   SC.Record.attr(String),
+  joinDate:   SC.Record.attr(Date),
+  friends:    SC.Record.toMany(MyApp.Person)
+});</code>
+      </div>
+    </div>
+    <div id="return-to-top"><a href="#top">⇡ Return to top</a></div>
+    <div id="copyright">&copy;2010 Sprout Systems Inc. &amp; Contributors</div>
+  </body>
+</html>

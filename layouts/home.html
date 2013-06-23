@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>SproutCore - <%= @item[:title] %></title>
+	  <link rel="stylesheet" href="<%= item_named('/assets/style/').reps[0].path %>" type="text/css" media="screen">
+  </head>
+  <body id="landing">
+    <div id="wrapper">
+      <div id="logo"><a href="/"><img src="/assets/images/logo.png" alt="SproutCore"></a></div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="copyright">&copy;2010 Sprout Systems Inc. &amp; Contributors</div>
+  </body>
+</html>
