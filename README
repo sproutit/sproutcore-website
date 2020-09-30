@@ -45,3 +45,17 @@ unmodified form, the contents of this site for any other purpose without
 express written consent from Sprout Systems, Inc.  In particular, use of the 
 SproutCore logo and name are trademarks and may not be used without express 
 written consent from Sprout Systems, Inc.
+
+# Contributing
+*To help us improve the site:*
+
+1.Fork it
+
+2.Create your feature branch (git checkout -b my-new-feature)
+
+3.Commit your changes (git commit -am 'Add some feature')
+
+4.Push to the branch (git push origin my-new-feature)
+
+5.Create new Pull Request
+
