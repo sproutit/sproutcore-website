@@ -61,7 +61,7 @@ task :prepare_targets do
     exit(1)
   end
   
-  puts "discovering all installed targets"
+  puts "discovering all instal targets"
   SC.build_mode = :production
   project = SC.load_project(WORKING) 
   
@@ -96,7 +96,7 @@ task :deploy_assets => [:collect_password, :build, :prepare_targets] do
   
   installed = {}
   
-  puts "building directory structure"
+  puts "building directory structures"
   Net::SSH.start('www.sproutcore.com', 'root', :password => password) do |ssh|
     targets.each do |target|
       LANGUAGES.each do |lang|
