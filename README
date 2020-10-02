@@ -3,14 +3,14 @@ Project:   SproutCore Website
 Copyright: ©2009 Sprout Systems, Inc.
 =============================================================================
 
-These are the source files for the new SproutCore marketing website.  
+These are the amazing source files for the new SproutCore marketing website.  
 
 Like the rest of SproutCore, the website itself is open source as well.  If 
 you find typos or think of something that would help improve the website, feel 
 free to fork this repository and make the changes.  You can then send a 
 pull request to sproutit on github so we can pull in your new change.
 
-== How the Website Is Built
+== How an amazing Website Is Built
 
 SproutCore's build tools have a built-in facility for generating 
 cache-optimized, multi-lingual web pages as well as full cloud applications.
